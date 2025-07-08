@@ -1,26 +1,5 @@
 # Fast Apply: Pipeline for Data Generation & Fine-Tuning Qwen2.5 Coder Models
 
-**🚀 Update May 2025:** For production-grade throughput, we use **[Morph](https://morphllm.com)** (the hosted Fast Apply API powering [SoftGen AI](https://softgen.ai/)). 
-- Morph hits **~4,500+ tok/s** even on huge token diffs
-- Larger model trained on millions of examples and tuned for accuracy.  
-> Stable inference, large free tier, highly recommended if you need serious speed in prod.
-
-![apply](https://github.com/user-attachments/assets/034efec0-d725-42a3-84da-8e9696799a9f)
-
-
-
-Kortix Fast Apply models are designed for instant code application.
-They achieve high throughput when deployed on fast providers like Fireworks while maintaining high edit accuracy:
-
-- ~ `340 tok/s` for 1.5B model
-- ~ `150 tok/s` for 7B model
-
-Models and dataset are available on HuggingFace:
-- [FastApply-7B-v1.0](https://huggingface.co/Kortix/FastApply-7B-v1.0)
-- [FastApply-1.5B-v1.0](https://huggingface.co/Kortix/FastApply-1.5B-v1.0)
-- [FastApply-dataset-v1.0](https://huggingface.co/datasets/Kortix/FastApply-dataset-v1.0)
-
-
 The inference prompt structure:
 ```
 <|im_start|>system
